@@ -19,5 +19,5 @@ The code downloads the dataset from https://raw.githubusercontent.com/jbrownlee/
 ```model.py``` defines the model and trains the model with german and English sequences training data.
 ```evaluate.py``` evaluates the model on train and test dataset. The BLEU score is the evaluation metric in this project.
 
-##Generate translation
+## Generate translation
 ```python3 model.py```
