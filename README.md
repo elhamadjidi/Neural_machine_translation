@@ -1,4 +1,4 @@
-# Neural Machine Translator (NMT) 
+# Neural Machine Translation (NMT) 
 This is a repository for a deep learning model using encoder-decoder architecture to translate german sequence to English automatically.
 ## prerequisites:
 - python 3 
