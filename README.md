@@ -1,5 +1,5 @@
 # Neural Machine Translation (NMT) 
-This is a repository for a deep learning model using encoder-decoder architecture to translate german sequence to English automatically.
+This is a repository for a deep learning model using encoder-decoder architecture to translate german sequences to English automatically.
 ## prerequisites:
 - python 3 
 - Keras 2.0 or higher
@@ -11,7 +11,7 @@ All packages used here can be installed by pip as following the example for NumP
 pip install numpy
 ```
 ## Dataset:
-The code downloads the dataset from https://raw.githubusercontent.com/jbrownlee/Datasets/master/deu.txt, you don't need to download it separately.
+The project downloads the dataset from https://raw.githubusercontent.com/jbrownlee/Datasets/master/deu.txt; you don't need to download it separately.
 
 ## process, train, test
 ```data_preparation.py``` downloads the dataset and separates German and English and pre-processes the dataset.
