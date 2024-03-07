@@ -4,7 +4,7 @@ from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 from keras.utils import to_categorical
 from data_preparation import save_clean_data, load_clean_data
-from random import shuffle
+import secrets
 
 # load a clean dataset
 def load_clean_sentences(filename):
@@ -48,7 +48,7 @@ except (OSError, IOError):
     raw_data = load_clean_data('english-german.pkl')
     num_sentences = 100000
     dataset = raw_data[:num_sentences,:]
-    shuffle(dataset)
+    secrets.SystemRandom().shuffle(dataset)
     train, test = dataset[:90000], dataset[90000:]
     print(train[10000])
     
