@@ -1,14 +1,14 @@
-from pickle import  load
 from numpy import array
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 from keras.utils import to_categorical
 from data_preparation import save_clean_data, load_clean_data
 from random import shuffle
+import fickling
 
 # load a clean dataset
 def load_clean_sentences(filename):
-	return load(open(filename, 'rb'))
+	return fickling.load(open(filename, 'rb'))
  
 
 
