@@ -1,9 +1,10 @@
 import string
 import re
-from pickle import dump, load
+from pickle import dump
 from unicodedata import normalize
 from numpy import array
 import pandas as pd
+import fickling
 
 # load doc into memory
 def load_doc(filename):
@@ -52,7 +53,7 @@ def save_clean_data(sentences, filename):
 	print('Saved: %s' % filename)
 
 def load_clean_data(filename):
-  return load(open(filename,'rb'))
+  return fickling.load(open(filename,'rb'))
 
 
 
